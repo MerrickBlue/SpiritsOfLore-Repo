@@ -41,7 +41,7 @@ namespace CardFanUI
             if (highlightImage) highlightImage.color = _defaultColor;
         }
 
-        public void OnDrop(PointerEventData eventData)
+        public virtual void OnDrop(PointerEventData eventData)
         {
             if (highlightImage) highlightImage.color = _defaultColor;
             if (eventData.pointerDrag == null) return;
